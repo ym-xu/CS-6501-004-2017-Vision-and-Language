@@ -1,1 +1,2 @@
-# CS-6501-004-2017-Vision-Language
+# CS-6501-004, 2017
+Vision Language
