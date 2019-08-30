@@ -6,6 +6,10 @@ from scipy.spatial.distance import cdist
 from nltk import word_tokenize
 import numpy
 
+# Load data and show some images.
+data = pickle.load(open('mscoco_small.p'))
+train_data = data['train']
+val_data = data['val']
 
 def preparedata(data):
 
@@ -42,29 +46,18 @@ def bleu(sampleTestImageId,nearestNeighbors):
 
 def main():
 
-    # Load data and show some images.
-    data = pickle.load(open('mscoco_small.p'))
-    train_data = data['train']
-    val_data = data['val']
+    scores = []
+    #print len(val_data['captions'])
 
     #get features
     train_features = preparedata(train_data)
     val_features = preparedata(val_data)
 
-    #retrieve
-    sampleTestImageId = 300
-    nearestNeighbors = retrieve(300,train_features,val_features)
+    for i in range(len(val_data['captions'])):
+        score = bleu(i,retrieve(i,train_features,val_features))
+        scores.append(score)
 
-    # Show the image and nearest neighbor images.
-    plt.imsave('sample',imread('mscoco/%s' % val_data['images'][sampleTestImageId]));
-    plt.axis('off')
-    plt.title('query image:')
-    fig = plt.figure()
-    for (i, neighborId) in enumerate(nearestNeighbors[:5]):
-        fig.add_subplot(1, 5, i + 1)
-        plt.imsave(str(i),imread('mscoco/%s' % train_data['images'][neighborId]))
-        plt.axis('off')
-
+    print np.sum(scores)/len(scores)
 
 if __name__ == '__main__':
     main()
