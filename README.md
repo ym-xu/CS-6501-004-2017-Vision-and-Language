@@ -5,7 +5,7 @@ Vision & Language at Virginia Tech [[website]](http://www.cs.virginia.edu/~vicen
 
 ### [Image Processing and Retrieval Lab](lab1)
 - Dataset: [MSCOCO](http://mscoco.org)
-- Algorithm: Distance Metric
+- Algorithm: Distance Metric Learning
 - Assignment: Text-Image Retrieval
 
 ### Deep Learning Lab
