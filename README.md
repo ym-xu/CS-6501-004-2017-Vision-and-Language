@@ -1,16 +1,16 @@
 # CS-6501-004, 2017
 Vision & Language at Virginia Tech [[website]](http://www.cs.virginia.edu/~vicente/vislang/)
 
-##Labs
+## Labs
 
-###[Image Processing and Retrieval Lab](lab1)
+### [Image Processing and Retrieval Lab](lab1)
 - Dataset: MSCOCO
 - Algorithm: Distance Metric
 - Assignment: Text-Image Retrieval
 
-###Deep Learning Lab
+### Deep Learning Lab
 
-###Language Generation Lab
+### Language Generation Lab
 
-###Image Captioning Lab
+### Image Captioning Lab
 
