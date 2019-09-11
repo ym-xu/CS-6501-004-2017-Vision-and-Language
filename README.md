@@ -8,7 +8,7 @@ Vision & Language at Virginia Tech [[website]](http://www.cs.virginia.edu/~vicen
 - Algorithm: Distance Metric Learning
 - Assignment: Text-Image Retrieval
 
-### Deep Learning Lab
+### [Deep Learning Lab](lab2)
 
 ### Language Generation Lab
 
