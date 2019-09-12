@@ -3,12 +3,12 @@ Vision & Language at Virginia Tech [[website]](http://www.cs.virginia.edu/~vicen
 
 ## Labs
 
-### [Image Processing and Retrieval Lab](lab1)
+### [Assignment1 Image-Text Retrieval Lab](lab1)
 - Dataset: [MSCOCO](http://mscoco.org)
 - Algorithm: Distance Metric Learning
 - Assignment: Text-Image Retrieval
 
-### [Deep Learning Lab](lab2)
+### [Assignment2-Deep-Learning-Lab](lab2)
 
 ### Language Generation Lab
 
